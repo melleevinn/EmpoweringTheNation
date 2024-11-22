@@ -1,7 +1,6 @@
 
 Empowering The Nation Html Website
 
-YouTube Link
 1. GitHub Website Link  https://github.com/melleevinn/EmpoweringTheNationWebsite
 2. GitHub Android Link https://github.com/melleevinn/Empowering-the-Nation-App
 
