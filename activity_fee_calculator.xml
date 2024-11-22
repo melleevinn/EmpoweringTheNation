@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="20dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fee Calculator"
+        android:background="#00573d"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Course Checkboxes -->
+            <CheckBox
+                android:id="@+id/checkboxFirstAid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Aid (R1500)"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxSewing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sewing (R1500)"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxLandscaping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Landscaping (R1500)"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxCooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooking (R750)"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Calculate Button -->
+            <Button
+                android:id="@+id/calculateFeeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate Fee"
+                android:backgroundTint="#00573d"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+
+            <!-- Results Section -->
+            <TextView
+                android:id="@+id/discountRateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount: 0%"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/vatText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VAT (15%): R0"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/finalFeeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Final Fee: R0"
+                android:textColor="#00cc66"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
