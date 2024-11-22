@@ -1,9 +1,10 @@
 
 Empowering The Nation Html Website
 
-1. GitHub Website Link   melleevinn/EmpoweringTheNationWebsite 
+YouTube Link
+1. GitHub Website Link  https://github.com/melleevinn/EmpoweringTheNationWebsite
+2. GitHub Android Link https://github.com/melleevinn/Empowering-the-Nation-App
 
-2. GitHub Android Link  melleevinn/Empowering-the-Nation-App 
 
 ## Project Description
 A platform designed to empower individuals by offering a range of online courses through a responsive website and an intuitive Android app.
@@ -49,10 +50,6 @@ document.getElementById('feeCalculatorForm').addEventListener('submit', function
     const vat = total * 0.15;
     document.getElementById('finalFee').textContent = total + vat - discounts;
 });
-
-
-## Video Presentation
-Watch the demo video on [YouTube](INSERT_VIDEO_LINK_HERE).
 
 ## Acknowledgements
 - Used libraries: RecyclerView, Retrofit, etc.
