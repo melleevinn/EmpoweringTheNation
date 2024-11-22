@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Aluta LMS</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #100f0f;
+        }
+
+        header {
+            background: #000000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #000000;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #0066cc;
+            background: #e6e3e3;
+        }
+
+        h2 {
+            color: #0066cc;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005bb5;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .info-box {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background: #f2f1f1;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #000000;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #e6e6e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #000000;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #e6e6e6;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00573d;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .calculator h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00cc66;
+        }
+
+        .calculator form {
+            display: grid;
+            gap: 10px;
+        }
+
+        .calculator label {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #2d2d2d;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .calculator label:hover {
+            background-color: #333333;
+        }
+
+        .calculator input[type="checkbox"] {
+            transform: scale(1.5);
+        }
+
+        .results {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .results .total-fee {
+            font-size: 1.5rem;
+            color: #00cc66;
+        }
+
+        button {
+            background-color: #00573d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #007a4d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #000000;
+            color: white;
+            margin-top: 20px;
+        }
+        
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #000000;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+        margin-bottom: 20px;
+        padding: 20px;
+        border-left: 5px solid #0066cc;
+        background: #000000;
+    }
+
+    .info-section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .info-box {
+        flex: 1;
+        margin: 10px;
+        padding: 20px;
+        background: #0c0c0c;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+</head>
+
+<body>
+    
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="fee-calculator.html">Fee Calculator</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="calculator">
+            <h2>Calculate Your Course Fees</h2>
+            <form id="feeCalculatorForm">
+                <label>
+                    <span>First Aid - R1500</span>
+                    <input type="checkbox" name="courses" value="1500">
+                </label>
+                <label>
+                    <span>Sewing - R1500</span>
+                    <input type="checkbox" name="courses" value="1500">
+                </label>
+                <label>
+                    <span>Landscaping - R1500</span>
+                    <input type="checkbox" name="courses" value="1500">
+                </label>
+                <label>
+                    <span>Life Skills - R1500</span>
+                    <input type="checkbox" name="courses" value="1500">
+                </label>
+                <label>
+                    <span>Cooking - R750</span>
+                    <input type="checkbox" name="courses" value="750">
+                </label>
+                <button type="submit">Calculate Total Fee</button>
+            </form>
+            <div class="results">
+                <p>Discount - <span id="discountRate">0%</span></p>
+                <p>VAT (15%) - R<span id="vat">0</span></p>
+                <p>Final Fee - R<span id="finalFee">0</span></p>
+                <p class="total-fee">Total Fee - R<span id="totalFee">0</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('feeCalculatorForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const courseCheckboxes = document.querySelectorAll('input[name="courses"]:checked');
+            let total = 0;
+
+            courseCheckboxes.forEach((checkbox) => {
+                total += parseInt(checkbox.value);
+            });
+
+            
+            let discountRate = 0;
+            if (courseCheckboxes.length > 3) {
+                discountRate = 15;
+            } else if (courseCheckboxes.length === 3) {
+                discountRate = 10;
+            } else if (courseCheckboxes.length === 2) {
+                discountRate = 5;
+            }
+
+            const discount = (total * discountRate) / 100;
+            const discountedTotal = total - discount;
+
+            const vat = discountedTotal * 0.15;
+            const finalFee = discountedTotal + vat;
+
+            document.getElementById('totalFee').textContent = total.toFixed(2);
+            document.getElementById('discountRate').textContent = discountRate + "%";
+            document.getElementById('vat').textContent = vat.toFixed(2);
+            document.getElementById('finalFee').textContent = finalFee.toFixed(2);
+        });
+    </script>
+</body>
+
+</html>
+
+        <section>
+            <h2>Why Reach Out?</h2>
+            <p>We believe in the power of communication. Whether you’re looking for more information about our courses,
+                seeking support for your learning journey, or simply want to share feedback, your voice matters!</p>
+        </section>
+
+        <section class="info-section">
+            <div class="info-box">
+                <h3>Our Vision</h3>
+                <p>We envision a future where education bridges gaps and opens doors, creating opportunities for
+                    everyone.</p>
+            </div>
+            <div class="info-box">
+                <h3>Our Mission</h3>
+                <p>Our mission is to provide quality, accessible education that enables learners to acquire essential
+                    skills.</p>
+            </div>
+            <div class="info-box">
+                <h3>Our Values</h3>
+                <p>Inclusivity, empowerment, and continuous improvement define our approach to education.</p>
+            </div>
+        </section>
+    </main>
+
+<footer>
+    <p>&copy; 2024 Empowering the Nation.</p>
+</footer>
+

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: #e6e6e6;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #000000;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #e6e6e6;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00573d;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-image: url('assets/images/hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .cta-button {
+            background-color: #fff;
+            color: #000000;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff0000;
+            color: white;
+        }
+
+        .partners {
+            background-color: #0d0d0d;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .partners h2 {
+            color: #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .partner-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .partner-logos img {
+            height: 60px;
+            filter: grayscale(1);
+            transition: filter 0.3s;
+        }
+
+        .partner-logos img:hover {
+            filter: grayscale(0);
+        }
+
+        .courses-preview {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .courses-preview h2 {
+            color: #00cc66;
+            margin-bottom: 20px;
+        }
+
+        .course-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .course-card {
+            background-color: #1a1a1a;
+            color: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+        }
+
+        .course-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="fee-calculator.html">Fee Calculator</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    
+    <section class="hero">
+        <h1>Upskill and Empower Yourself</h1>
+        <p>Join our training programs and gain the skills needed to succeed!</p>
+        <div class="cta-buttons">
+            <a href="courses.html" class="cta-button">Explore Courses</a>
+            <a href="contact.html" class="cta-button">Enroll Now</a>
+        </div>
+    </section>
+
+<section class="courses-preview">
+    <h2>Start by viewing our Popular Courses</h2>
+    <div class="course-cards">
+        <div class="course-card">
+
+            <h3>First Aid</h3>
+            <p>Gain essential life-saving skills and become a certified caregiver.</p>
+        </div>
+        <div class="course-card">
+
+            <h3>Sewing</h3>
+            <p>Learn the art of sewing and create beautiful garments.</p>
+        </div>
+        <div class="course-card">
+
+            <h3>Landscaping</h3>
+            <p>Transform outdoor spaces with expert landscaping techniques.</p>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <h2>In Collaboration With</h2>
+    <div class="partner-logos">
+        <span>South African Government</span>
+        <span>Rosebank College</span>
+        <span>Wits University</span>
+        <span>University of Cape Town</span>
+        <span>Imperial College London</span>
+    </div>
+</section>
+
+<style>
+    .partners {
+        background-color: #0d0d0d;
+        padding: 40px 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .partners h2 {
+        color: #e6e6e6;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+    }
+
+    .partner-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        font-size: 1.2rem;
+    }
+
+    .partner-logos span {
+        background-color: #1a1a1a;
+        color: #e6e6e6;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .partner-logos span:hover {
+        transform: translateY(-5px);
+        background-color: #00573d;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+        color: white;
+    }
+</style>
+
+    <footer>
+        <p>&copy; 2024 Empowering the Nation</p>
+    </footer>
+
+</body>
+
+</html>

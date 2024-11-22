@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses | Empowering the Nation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #000000;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #e6e6e6;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00573d;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        .courses {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .course-item {
+            background: linear-gradient(145deg, #1a1a1a, #1a1a1a);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .course-item h2 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin: 15px 0;
+        }
+
+        .course-item p {
+            color: #cccccc;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .course-item a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 30px;
+            font-size: 1rem;
+            background-color: #00573d;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 87, 61, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course-item a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 87, 61, 0.5);
+            background-color: #004c38;
+        }
+
+        footer {
+            background-color: #090909;
+            color: #e6e6e6;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 700px;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .modal.active {
+            display: block;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .modal-body {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .modal-close {
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #ff0000;
+            background: none;
+            border: none;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 500;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="fee-calculator.html">Fee Calculator</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section class="courses">
+        <div class="course-item">
+            <h2>First Aid</h2>
+            <p>Learn life-saving techniques such as CPR, wound management, and emergency response this will put you in a great place.</p>
+            <a href="course-first-aid.html">Learn More</a>
+            <a href="contact.html">Enroll Now</a>
+        </div>
+        <div class="course-item">
+            <h2>Sewing</h2>
+            <p>Develop sewing skills to create beautiful garments, repair clothes, and start your own business.</p>
+            <a href="course-sewing.html">Learn More</a>
+            <a href="contact.html">Enroll Now</a>
+        </div>
+        <div class="course-item">
+            <h2>Landscaping</h2>
+            <p>Master the art of landscaping with a focus on garden aesthetics, indigenous plants, and maintenance.</p>
+            <a href="course-landscaping.html">Learn More</a>
+            <a href="contact.html">Enroll Now</a>
+        </div>
+        <div class="course-item">
+            <h2>Life Skills</h2>
+            <p>Gain essential skills for navigating the modern world, from financial literacy to communication
+                techniques.</p>
+            <a href="course-life-skills.html">Learn More</a>
+            <a href="contact.html">Enroll Now</a>
+        </div>
+        <div class="course-item">
+            <h2>Housekeeping</h2>
+            <p>Learn professional housekeeping skills for residential and commercial spaces you can now make sure your house is healthy an clean.</p>
+            <a href="course-housekeeping.html">Learn More</a>
+            <a href="contact.html">Enroll Now</a>
+        </div>
+        <div class="course-item">
+            <h2>Event Planning</h2>
+            <p>Discover the secrets to planning and executing memorable events with ease you will host the best in the world.</p>
+            <a href="course-event-planning.html">Learn More</a>
+            <a href="contact.html">Enroll Now</a>
+        </div>
+        <div class="course-item">
+            <h2>Cooking</h2>
+            <p>Master basic cooking techniques and food preparation skills for home and professional kitchens.</p>
+            <a href="course-cooking.html">Learn More</a>
+            <a href="contact.html">Enroll Now</a>
+        </div>
+        <div class="course-item">
+            <h2>Garden Maintenance</h2>
+            <p>Learn the skills needed to care for and enhance gardens, from pruning to plant health any where you go theres green for you to earn.</p>
+            <a href="course-garden-maintenance.html">Learn More</a>
+            <a href="contact.html">Enroll Now</a>
+        </div>
+        <div class="course-item">
+            <h2>Basic Computer Skills</h2>
+            <p>Build essential computer literacy skills, from using productivity tools to navigating the web safely.</p>
+            <a href="course-basic-computer-skills.html">Learn More</a>
+            <a href="contact.html">Enroll Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Empowering the Nation</p>
+    </footer>
+
+</body>
+
+</html>

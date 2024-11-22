@@ -1,0 +1,210 @@
+* General Reset */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: 'Arial', sans-serif;
+
+    line-height: 1.6;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+
+}
+
+
+
+
+
+header {
+
+    background-color: #4CAF50;
+
+    padding: 20px 0;
+
+    color: white;
+
+}
+
+
+
+header nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+}
+
+
+
+header nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+
+header nav ul li a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+
+header nav .logo img {
+
+    width: 150px;
+
+}
+
+
+
+
+
+.hero {
+
+    background-image: url('assets/hero-image.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+
+.hero-text {
+
+    text-align: center;
+
+    color: white;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+
+.hero-text h1 {
+
+    font-size: 2.5em;
+
+}
+
+
+
+.hero-text .cta-button {
+
+    display: inline-block;
+
+    background-color: #fff;
+
+    color: #4CAF50;
+
+    padding: 10px 20px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    margin-top: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.hero-text .cta-button:hover {
+
+    background-color: #4CAF50;
+
+    color: white;
+
+}
+
+
+
+
+
+section {
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    padding: 20px;
+
+}
+
+
+
+
+
+footer {
+
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 10px 0;
+
+}
+
+
+
+footer p {
+
+    margin: 0;
+
+}
+
+
+
